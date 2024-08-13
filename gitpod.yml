@@ -1,0 +1,18 @@
+image:
+  file: .gitpod.dockerfile
+
+tasks:
+  - name: Terminal
+    command: |
+      echo "Welcome to your Ubuntu 22.04 environment!"
+      echo "You can now manually install Apache2, PHP, MySQL, and phpMyAdmin."
+
+ports:
+  - port: 80
+    onOpen: ignore
+  - port: 3306
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
